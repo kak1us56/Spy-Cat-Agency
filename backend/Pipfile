@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+djangorestframework = "~=3.16.0"  # REST batteries
+django = "*"
+requests = "*"
+django-cors-headers = "*"
+gunicorn = "*"
+
+[dev-packages]
+black="~=25.1.0"  # formatter
+django-stubs = { version = "~=5.2.1", extras=["compatible-mypy"] }
+djangorestframework-stubs = { version = "~=3.16.0", extras=["compatible-mypy"] }
+flake8="~=7.3.0"  # code quality
+isort="~=6.0.1"   # sorting imports
+
+[requires]
+python_version = "3.13"
